@@ -14,7 +14,6 @@ body {
 #no-notes {
   padding: 100px 0px;
   text-align: center;
-  width: ;
 }
 
 #ts {
@@ -24,9 +23,10 @@ body {
 .inputText {
   padding: 10px;
   border-radius: 5px;
-  border: 0px;
+  border: 2px solid #ffd31d;
   width: 30%;
   margin: 15px;
+  outline: none;
 }
 
 .hidden {
@@ -37,8 +37,8 @@ body {
   padding: 10px;
   border-radius: 5px;
   border: 0px;
-  background-color: dodgerblue;
-  color: white;
+  background-color: #ffd31d;
+  color: #333;
   cursor: pointer;
 }
 
