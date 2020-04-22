@@ -11,11 +11,20 @@ body {
   color: #fff;
 }
 
+#no-notes {
+  padding: 100px;
+  text-align: center;
+}
+
 .inputText {
   padding: 10px;
   border-radius: 5px;
   border: 0px;
   width: 30%;
+}
+
+.hidden {
+  display: none;
 }
 
 .btn {
