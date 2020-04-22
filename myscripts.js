@@ -39,7 +39,8 @@ let createNote = (noteTitle, noteBody) => {
   ul.appendChild(li);
 };
 
-let createNoteFromInput = () => {
+let createNoteFromInput = (e) => {
+  e.preventDefault();
   var noteTitle = document.getElementById("new-note-title-input").value;
   var noteBody = document.getElementById("new-note-body-input").value;
 
