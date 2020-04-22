@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 100%;
+  margin: 3em;
+  background: #333;
+  color: #fff;
+}
+
+.inputText {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px;
+  width: 30%;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+}
+
+h2,
+p {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+ul {
+  overflow: hidden;
+  padding: 3em 1em;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000;
+  background: #ffd31d;
+  display: block;
+  height: 10em;
+  width: 10em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+}
+
+ul li {
+  margin: 1em;
+  float: left;
+  position: relative;
+}
+
+ul li h2 {
+  font-size: 140%;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+ul li p {
+  font-family: "Reenie Beanie", arial, sans-serif;
+  font-size: 180%;
+}
+
+.delete {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border: 4px double white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul li a {
+  transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  cursor: default;
+}
+
+ul li:nth-child(even) a {
+  transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+  background: #ff5733;
+}
+
+ul li:nth-child(3n) a {
+  transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+  background: #77d8d8;
+}
+
+ul li:nth-child(5n) a {
+  transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
+
+ul li a:hover,
+ul li a:focus {
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+
+ol {
+  text-align: center;
+}
+
+ol li {
+  display: inline;
+  padding-right: 1em;
+}
+
+ol li a {
+  color: #fff;
+}

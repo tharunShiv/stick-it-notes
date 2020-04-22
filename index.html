@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sticky notes</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="heading">
+        <h1>Stick-It Notes</h1>
+      </div>
+      <div id="form">
+        <input
+          type="text"
+          class="inputText"
+          placeholder="Title"
+          id="new-note-title-input"
+          required
+        />
+        <input
+          class="inputText"
+          type="text"
+          placeholder="Note Content"
+          id="new-note-body-input"
+          required
+        />
+        <button type="submit" class="btn" onclick="createNoteFromInput()">
+          Create Note
+        </button>
+      </div>
+    </div>
+
+    <ul id="notes">
+      <li>
+        <a href="#">
+          <h2>To Buy</h2>
+          <button class="delete">X</button>
+          <p>Pen, Pencil, Sharpener</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2>Orange juice</h2>
+          <button class="delete">X</button>
+          <p>Grind oranges in a mixer and add half cup of water</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2>To complete</h2>
+          <button class="delete">X</button>
+          <p>Modern JavaScript ES6 course and work on projects</p>
+        </a>
+      </li>
+    </ul>
+    <script src="myscripts.js"></script>
+  </body>
+</html>
