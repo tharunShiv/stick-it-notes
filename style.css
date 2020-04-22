@@ -12,8 +12,9 @@ body {
 }
 
 #no-notes {
-  padding: 100px;
+  padding: 100px 0px;
   text-align: center;
+  width: ;
 }
 
 #ts {
