@@ -17,23 +17,26 @@
         <h1>Stick-It Notes</h1>
       </div>
       <div id="form">
-        <input
-          type="text"
-          class="inputText"
-          placeholder="Title"
-          id="new-note-title-input"
-          required
-        />
-        <input
-          class="inputText"
-          type="text"
-          placeholder="Note Content"
-          id="new-note-body-input"
-          required
-        />
-        <button type="submit" class="btn" onclick="createNoteFromInput()">
-          Create Note
-        </button>
+        <form id="inputForm">
+          <input
+            type="text"
+            class="inputText"
+            placeholder="Title"
+            id="new-note-title-input"
+            required
+            autofocus
+          />
+          <input
+            class="inputText"
+            type="text"
+            placeholder="Note Content"
+            id="new-note-body-input"
+            required
+          />
+          <button type="submit" class="btn">
+            Create Note
+          </button>
+        </form>
       </div>
     </div>
     <h3 id="no-notes">No Notes Found, Add one!</h3>

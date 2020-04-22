@@ -92,7 +92,11 @@ for (i = 0; i < count + 1; i++) {
   console.log(window.localStorage.key(i));
   let noteTitle = window.localStorage.key(i);
   let noteBody = window.localStorage.getItem(noteTitle);
-  if (noteTitle !== "count") {
+  if (noteTitle !== "count" && noteTitle) {
     createNote(noteTitle, noteBody);
   }
 }
+
+document
+  .getElementById("inputForm")
+  .addEventListener("submit", createNoteFromInput, false);
