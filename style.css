@@ -16,11 +16,16 @@ body {
   text-align: center;
 }
 
+#ts {
+  color: #ffd31d;
+}
+
 .inputText {
   padding: 10px;
   border-radius: 5px;
   border: 0px;
   width: 30%;
+  margin: 15px;
 }
 
 .hidden {
@@ -143,4 +148,17 @@ ol li {
 
 ol li a {
   color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  #new-note-title-input,
+  #new-note-body-input {
+    display: block;
+    width: 90%;
+    margin-left: 0px;
+  }
+
+  .btn {
+    margin-left: 0px;
+  }
 }
