@@ -11,6 +11,15 @@ body {
   color: #fff;
 }
 
+#heading {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  z-index: 7;
+  padding: 15px 0px;
+  margin-left: 15px;
+}
+
 #no-notes {
   padding: 100px 0px;
   text-align: center;
@@ -35,11 +44,18 @@ body {
 
 .btn {
   padding: 10px;
-  border-radius: 5px;
-  border: 0px;
+  border-radius: 20px;
+  border: 2px solid #ffd31d;
   background-color: #ffd31d;
   color: #333;
   cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:active {
+  border: 2px solid #333;
+  box-shadow: inset 0 0 5px #000000;
 }
 
 h2,
@@ -152,10 +168,17 @@ ol li a {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    margin-top: 1em;
+  }
   #new-note-title-input,
   #new-note-body-input {
     display: block;
     width: 90%;
+    margin-left: 0px;
+  }
+
+  #heading {
     margin-left: 0px;
   }
 
